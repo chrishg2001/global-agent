@@ -86,6 +86,7 @@
     "url": "https://github.com/gajus/global-agent"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "del-cli ./dist && tsc",
     "lint": "eslint ./src ./test && tsc",
     "test": "ava --verbose --serial",
